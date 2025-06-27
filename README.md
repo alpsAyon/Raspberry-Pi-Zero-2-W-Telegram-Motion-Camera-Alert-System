@@ -28,3 +28,6 @@ pip3 install -r requirements.txt
 ```bash
 python3 motion_photo_telegram.py
 ```
+
+---
+> will make a detailed tutorial later. thank you.
