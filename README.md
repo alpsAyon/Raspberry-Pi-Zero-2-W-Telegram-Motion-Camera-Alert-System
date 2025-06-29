@@ -10,6 +10,16 @@ This IoT project uses a PIR motion sensor and Pi Camera to capture and send moti
 * LED indicator for motion status
 * Easily customizable and extendable
 ---
+
+###📘 Overview of the System
+This project continuously monitors a room using a PIR (Passive Infrared) motion sensor. When motion is detected:
+
+An LED is turned on to signal detection.
+
+The Pi Camera takes a photo and saves it locally.
+
+The photo is then sent directly to your Telegram account using a bot you created.
+
 ### 🛠️ Setup
 1. Create a Telegram bot using @BotFather
 
@@ -24,6 +34,14 @@ CHAT_ID=your_chat_id_here
 ```bash
 pip3 install -r requirements.txt
 ```
+
+or you could install them running the following commands.
+```bash
+sudo apt update
+sudo apt install libraspberrypi-bin python3-pip
+pip3 install -r requirements.txt
+```
+
 5. Run the script:
 ```bash
 python3 motion_photo_telegram.py
