@@ -35,6 +35,7 @@ This IoT project uses a PIR motion sensor and Pi Camera to capture and send moti
 
 ---
 
+
 ## 🔧 Raspberry Pi GPIO Wiring
 
 | Component | Pi GPIO (BCM) | Physical Pin |
@@ -55,6 +56,17 @@ An LED is turned on to signal detection.
 The Pi Camera takes a photo and saves it locally.
 
 The photo is then sent directly to your Telegram account using a bot you created.
+
+## 🚀 Setup Instructions
+
+### 1. Enable Camera on Your Pi
+```bash
+sudo raspi-config
+```
+
+* Go to Interface Options → Legacy Camera → Enable
+* Reboot your Pi
+
 
 ### 🛠️ Setup
 1. Create a Telegram bot using @BotFather
