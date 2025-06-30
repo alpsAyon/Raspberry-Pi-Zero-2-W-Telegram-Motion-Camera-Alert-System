@@ -11,6 +11,42 @@ This IoT project uses a PIR motion sensor and Pi Camera to capture and send moti
 * Easily customizable and extendable
 ---
 
+## 🧰 Components Used
+
+| Component             | Description                  |
+|----------------------|------------------------------|
+| Raspberry Pi Zero 2 W | With RPi Camera enabled      |
+| HC-SR501 PIR Sensor   | Motion detection             |
+| LED                   | Motion visual indicator      |
+| 330Ω Resistor         | In series with LED           |
+| Pi Camera Module      | Captures motion-triggered image |
+| Jumper Wires + Breadboard | Standard wiring tools     |
+
+---
+
+## 🧠 How It Works
+
+1. Sensor warms up for 5 seconds
+2. If motion is detected:
+   - LED turns on
+   - A photo is captured using the Pi Camera
+   - Photo is sent to your Telegram account
+3. After 3 seconds, LED turns off and system resumes monitoring
+
+---
+
+## 🔧 Raspberry Pi GPIO Wiring
+
+| Component | Pi GPIO (BCM) | Physical Pin |
+|-----------|----------------|--------------|
+| PIR OUT   | GPIO17         | Pin 11       |
+| LED +     | GPIO27         | Pin 13       |
+| LED - (via 330Ω) | GND       | Pin 9        |
+| PIR VCC   | 3.3V           | Pin 1        |
+| PIR GND   | GND            | Pin 6        |
+
+---
+
 ###📘 Overview of the System
 This project continuously monitors a room using a PIR (Passive Infrared) motion sensor. When motion is detected:
 
