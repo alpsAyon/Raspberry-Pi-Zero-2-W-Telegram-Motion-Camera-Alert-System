@@ -1,9 +1,9 @@
-## 🔔 Raspberry Pi Zero 2 W Telegram Motion Camera Alert System
+## Raspberry Pi Zero 2 W Telegram Motion Camera Alert System
 
 This IoT project uses a PIR motion sensor and Pi Camera to capture and send motion-triggered photos to a Telegram bot. Useful for DIY home security setups.
 
 ---
-### 📦 Features:
+### Features:
 * Detects motion using a PIR sensor
 * Takes timestamped photo using Raspberry Pi Camera
 * Sends photo instantly to Telegram via a bot
@@ -11,7 +11,7 @@ This IoT project uses a PIR motion sensor and Pi Camera to capture and send moti
 * Easily customizable and extendable
 ---
 
-## 🧰 Components Used
+## Components Used
 
 | Component             | Description                  |
 |----------------------|------------------------------|
@@ -24,7 +24,7 @@ This IoT project uses a PIR motion sensor and Pi Camera to capture and send moti
 
 ---
 
-## 🧠 How It Works
+## How It Works
 
 1. Sensor warms up for 5 seconds
 2. If motion is detected:
@@ -36,7 +36,7 @@ This IoT project uses a PIR motion sensor and Pi Camera to capture and send moti
 ---
 
 
-## 🔧 Raspberry Pi GPIO Wiring
+## Raspberry Pi GPIO Wiring
 
 | Component | Pi GPIO (BCM) | Physical Pin |
 |-----------|----------------|--------------|
@@ -48,7 +48,7 @@ This IoT project uses a PIR motion sensor and Pi Camera to capture and send moti
 
 ---
 
-###📘 Overview of the System
+### Overview of the System
 This project continuously monitors a room using a PIR (Passive Infrared) motion sensor. When motion is detected:
 
 An LED is turned on to signal detection.
@@ -57,7 +57,7 @@ The Pi Camera takes a photo and saves it locally.
 
 The photo is then sent directly to your Telegram account using a bot you created.
 
-## 🚀 Setup Instructions
+## Setup Instructions
 
 ### 1. Enable Camera on Your Pi
 ```bash
@@ -68,7 +68,7 @@ sudo raspi-config
 * Reboot your Pi
 
 
-### 🛠️ Setup
+### Setup
 1. Create a Telegram bot using @BotFather
 
 2. Get your chat ID via @JsonDumpCUBot
